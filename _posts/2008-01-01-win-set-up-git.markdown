@@ -4,37 +4,48 @@ title: Set Up Git
 description: A quick guide to help you get started with Git
 ---
 
-<p class="intro">If you&rsquo;ve found yourself on this page, we&rsquo;re assuming you&rsquo;re brand new to Git and GitHub. This guide will walk you through the basics and explain a little bit about how everything works along the way.</p>
+<p class="intro">
+  If you are brand new to Git and GitHub, you&#8217;re in the right place. 
+  This page will walk you through quickly getting set up with Git on Windows.
+</p>
 
-<p class="intro">This is the guide for setting up git in <strong>Windows</strong>. There are also guides for <strong><a href="/mac-set-up-git">OS X</a></strong> and <strong><a href="/linux-set-up-git">Linux</a></strong>.</p>
+<p class="intro">This is the guide for setting up git in <strong>Windows</strong>. There are also guides for <strong><a href="/mac-set-up-git">OSX</a></strong> and <strong><a href="/linux-set-up-git">Linux</a></strong>.</p>
 
-##<span class="step">First:</span> Download and Install Git
+##<span class="step">First:</span> Download and Install GitHub for Windows
 
-At the heart of GitHub is an open source version control system (VCS) called Git&#42;. Created by the same dudes that created Linux, Git is responsible for everything GitHub related that happens locally on your computer.
+At the heart of GitHub is an open source version control system (VCS) called Git&#42;. Created by the same dudes that created Linux, 
+Git is responsible for everything GitHub related that happens locally on your computer.
 
 _&#42;If you don&rsquo;t already know what Git is, <a href="http://progit.org/book/ch1-3.html" target="_blank">take a crash course.</a>_
 
+Git used to be unwelcoming to Windows users and required many configuration options and steps to install. 
+GitHub for Windows simplifies all that into a single click to install!
+
 <ol>
   <li>
-    <p><span class="step-title">Download and install the latest version of <a href="http://code.google.com/p/msysgit/downloads/list" target="_blank">Git for Windows</a>.</span></p>
+    <p><span class="step-title">Download and install <a href="http://windows.github.com/" target="_blank">GitHub for Windows</a>.</span></p>
 
-    <p>Use the default options for each step.</p>
+    <p>Click on the green _download_ button in the top right to launch the ClickOnce installer.</p>
 
-    <img src="/images/bootcamp/bootcamp_1_win_install_1.jpg" width="558" height="442" alt="Welcome page" />
-    <img src="/images/bootcamp/bootcamp_1_win_install_2.jpg" width="558" height="442" alt="Information" />
-    <img src="/images/bootcamp/bootcamp_1_win_install_3.jpg" width="558" height="442" alt="Select destination location" />
-    <img src="/images/bootcamp/bootcamp_1_win_install_4.jpg" width="558" height="442" alt="Select start menu folder" />
-    <img src="/images/bootcamp/bootcamp_1_win_install_5.jpg" width="558" height="442" alt="Select components" />
-    <img src="/images/bootcamp/bootcamp_1_win_install_6.jpg" width="558" height="442" alt="Adjusting your PATH environment" />
-    <img src="/images/bootcamp/bootcamp_1_win_install_7.jpg" width="558" height="442" alt="Configuring the line ending conversions" />
-    <img src="/images/bootcamp/bootcamp_1_win_install_8.jpg" width="558" height="442" alt="Installing" />
-    <img src="/images/bootcamp/bootcamp_1_win_install_9.jpg" width="558" height="442" alt="Installation complete" />
+    <img src="/images/gh4w/gh4w-click-once-install.png" width="558" height="346" alt="ClickOnce" />
 
-    <p><strong>Do not use PuTTY if you are given the option. GitHub only provides support for openssh.</strong></p>
+    <p>We recommend clicking the _Install_ button. If you are not running as an admin, you may be prompted with 
+      the User Account Control (UAC) Prompt.
+    </p>
+
+    <img src="/images/gh4w/gh4w-uac-prompt.png" width="558" height="346" alt="UAC" />
+    
+    <p>This will download and install GitHub for Windows.</p>
+
+    <img src="/images/gh4w/gh4w-app.png" width="558" height="332" alt="GH4W" />
+
+    <p>That&#8217;s it! You are done. GitHub for Windows will silently update itself when updates are available.</p>
   </li>
 </ol>
 
-##<span class="step">Next:</span> Set Up SSH Keys
+##<span class="step">Advanced:</span> Set Up SSH Keys
+
+GitHub for Windows uses HTTPS by default. Setting up SSH keys is not required, but if you prefer to use SSH, keep reading.
 
 We use SSH keys to establish a secure connection between your computer and GitHub. Setting them up is fairly easy, but does involve a number of steps.
 
@@ -78,7 +89,8 @@ To make sure you generate a brand new key, you need to check if one already exis
 
 ##<span class="step">Then: </span> Set Up Your Info
 
-Now that you have Git set up and your SSH keys entered into GitHub, it&rsquo;s time to configure your personal info.
+When you first run GitHub for Windows, it will walk you through cofiguring your personal information. 
+But if you prefer to use the command line.
 
 {% include email_setup.markdown %}
 
