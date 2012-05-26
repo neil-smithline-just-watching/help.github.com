@@ -26,7 +26,7 @@ h2. GitHub
 
 h2. Gist
 
-* "Replace page title with filename":http://gist.github.com/93187
+* "Replace page title with filename":http://gist.github.com/2794345
 * "Diff for gist":http://gist.github.com/105913
 * "ACE for gist":https://gist.github.com/raw/1368637/acegist.user.js — Replace textareas with ACE editors when editing your gists.
 * "Bespin for gist":http://gist.github.com/463054 - Allows users to quickly replace any textarea you encounter on gist.github.com with a Bespin editor.
